@@ -3,10 +3,10 @@
 ## Live Demo
 
 Landing Page:
-https://your-vercel-url
+https://lead-desk-mini-blush.vercel.app/
 
 Admin:
-https://your-vercel-url/login
+https://lead-desk-mini-blush.vercel.app/login
 
 ## Test Credentials
 
