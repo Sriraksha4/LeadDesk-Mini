@@ -13,7 +13,7 @@ function Admin() {
 
   const fetchLeads = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/leads");
+      const res = await axios.get("https://leaddesk-mini-api-kpwq.onrender.com/api/leads");
       setLeads(res.data);
     } catch (err) {
       console.error(err);
@@ -32,7 +32,7 @@ const logout = () => {
     if (!window.confirm("Delete this lead?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/leads/${id}`);
+      await axios.delete(`https://leaddesk-mini-api-kpwq.onrender.com/api/leads/${id}`);
       fetchLeads();
     } catch (err) {
       console.error(err);
@@ -43,7 +43,7 @@ const logout = () => {
   const updateStatus = async (id) => {
     try {
       await axios.patch(
-        `http://localhost:5000/api/leads/${id}/status`
+        `https://leaddesk-mini-api-kpwq.onrender.com/api/leads/${id}/status`
       );
 
       fetchLeads();
