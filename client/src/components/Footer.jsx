@@ -1,11 +1,22 @@
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white text-center py-6">
-      <p>© 2026 LeadDesk Mini. All Rights Reserved.</p>
-
-      <p className="text-sm mt-2">
-        Built for Digital Heroes Training Task
-      </p>
+    <footer
+      style={{
+        textAlign: "center",
+        padding: "20px",
+        background: "#111827",
+        color: "#fff",
+      }}
+    >
+      Built for{" "}
+      <a
+        href="https://digitalheroesco.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "#3b82f6" }}
+      >
+        Digital Heroes Training Task
+      </a>
     </footer>
   );
 }
